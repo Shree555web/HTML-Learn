@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same file css</title>
+    <link rel="stylesheet" href="a.css">
+
+    <style>
+        .a 
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: chocolate;
+        }
+        #a {
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    </head>
+<body>
+    
+    <p class="a"> This is using outside css (class) </p>
+    <p id="a"> This is outside css (id)</p>
+    <p style="background-color: aqua; font-size: 30px;">This is inline css</p>
+
+    <p class="ab"> This is external css (a.css)</p>
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-panel {
+    background-color: #5c3d60;
+    color: white;
+    width: 40%;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.left-panel .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    background: white;
+    color: #5c3d60;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel h2 {
+    margin-top: 60px;
+    font-size: 22px;
+}
+
+.left-panel p {
+    margin: 20px 0;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.right-panel h2 {
+    margin-bottom: 20px;
+    color: #5c3d60;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #5c3d60;
+}
+
+.alt-text {
+    font-size: 0.9em;
+    color: #a98ea5;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #5c3d60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #462a49;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">S</div>
+            <h2>Welcome to Our Website!</h2>
+            <p>To keep connected with us, please login to your personal account.</p>
+            <button class="btn">Sign In</button>
+        </div>
+        <div class="right-panel">
+            <h2>Create an Account!</h2>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p class="alt-text">or use your email for registration</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button class="btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
